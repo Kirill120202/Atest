@@ -4,19 +4,21 @@ class Program
 {
     static void Main(string[] args)
     {
-        int M = 1; // Начальное значение
-        int N = 10; // Конечное значение
-        
-        Console.WriteLine($"Натуральные числа от {M} до {N}:");
-        PrintNaturalNumbers(M, N);
+        Console.Write("Введите значение M: ");
+        int m = int.Parse(Console.ReadLine());
+
+        Console.Write("Введите значение N: ");
+        int n = int.Parse(Console.ReadLine());
+
+        PrintNumbersInRange(m, n);
     }
 
-    static void PrintNaturalNumbers(int m, int n)
+    static void PrintNumbersInRange(int m, int n)
     {
         if (m <= n)
         {
             Console.WriteLine(m);
-            PrintNaturalNumbers(m + 1, n);
+            PrintNumbersInRange(m + 1, n);
         }
     }
 }
