@@ -11,7 +11,7 @@ class Program
         int n = int.Parse(Console.ReadLine());
 
         int result = AckermannFunction(m, n);
-        Console.WriteLine($"Результат функции Аккермана для m={m} и n={n}: {result}");
+        Console.WriteLine($"Результат функции Аккермана: {result}");
     }
 
     static int AckermannFunction(int m, int n)
